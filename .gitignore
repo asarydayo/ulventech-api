@@ -1,0 +1,8 @@
+docker-compose.override.yaml
+.idea/
+.vscode/
+node_modules/
+build/
+dist/
+tmp/
+temp/

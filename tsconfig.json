@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "lib": ["es5", "es6"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "types": ["reflect-metadata", "node"],
+    "baseUrl": "./",
+    "paths": {
+      "@database/*": ["src/database/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@middlewares/*": ["src/app/middlewares/*"],
+      "@routes/*": ["src/app/routes/*"],
+      "@util/*": ["src/app/utils/*"],
+      "@config/*": ["src/config/*"],
+
+      "@auth/*": ["src/app/modules/auth/*"],
+      "@admin/*": ["src/app/modules/admin/*"],
+      "@freelancer/*": ["src/app/modules/freelancer/*"],
+      "@helper/*": ["src/app/modules/helper/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
